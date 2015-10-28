@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" 
+	android:descendantFocusability="beforeDescendants" >
+    
+    <TextView 
+        android:id="@+id/level_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Victim Level" />
+	<Spinner
+        android:id="@+id/filter_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/level_tv"
+		android:layout_toRightOf="@id/level_tv"
+        android:entries="@array/search_arrays"
+        android:prompt="@string/triage_prompt" />
+    <TextView 
+        android:id="@+id/distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@id/level_tv"
+		android:layout_marginTop="20dp"
+        android:layout_marginLeft="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Range (km)" />
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/distance_tv"
+		android:layout_toRightOf="@id/distance_tv"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button
+        android:id="@+id/select_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/select_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/select_cancel"
+        android:layout_marginRight="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confirm" />
+
+</RelativeLayout>

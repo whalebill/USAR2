@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" 
+	android:descendantFocusability="beforeDescendants" >
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.5"
+        android:src="@drawable/ems_logo_1"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.5"
+        android:src="@drawable/ems_logo_2"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="WELCOME"
+        style="@style/TitleText" />
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:text="using USAR system"
+        style="@style/SubtitleText" />
+    <EditText
+        android:id="@+id/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/subtitle"
+        android:layout_marginRight="250dp"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	<EditText
+        android:id="@+id/responder_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/team_name"
+        android:layout_below="@id/team_name"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView 
+        android:id="@+id/team_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/team_name"
+        android:layout_marginLeft="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team Name" />
+    <TextView 
+        android:id="@+id/ems_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/responder_id"
+        android:layout_marginLeft="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Responder Id" />
+    <Button
+        android:id="@+id/login_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/login_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/login_cancel"
+        android:layout_marginRight="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login" />
+</RelativeLayout>

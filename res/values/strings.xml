@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">USAR</string>
+    <string name="action_settings">Settings</string>
+    <string name="triage_prompt">Choose a level</string>
+    <string-array name="triage_arrays">
+        <item>RED</item>
+        <item>YELLOW</item>
+        <item>GREEN</item>
+        <item>BLACK</item>
+    </string-array>
+    <string-array name="search_arrays">
+        <item>ALL</item>
+        <item>RED</item>
+        <item>YELLOW</item>
+        <item>GREEN</item>
+        <item>BLACK</item>
+    </string-array>
+</resources>

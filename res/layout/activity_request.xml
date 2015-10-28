@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#aa000000" 
+	android:descendantFocusability="beforeDescendants" >
+    
+    <TextView 
+        android:id="@+id/switch_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="250dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Request help from others" />
+	<RadioGroup 
+	    android:id="@+id/switch_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/switch_tv"
+        android:layout_below="@id/switch_tv" >
+		<RadioButton 
+		    android:id="@+id/enable_request"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/switch_tv"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:text="Enable"/>
+		<RadioButton 
+		    android:id="@+id/disable_request"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/switch_tv"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:text="Disable"/>
+	</RadioGroup>
+	<Button
+        android:id="@+id/request_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/request_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/request_cancel"
+        android:layout_marginRight="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confirm" />
+</RelativeLayout>

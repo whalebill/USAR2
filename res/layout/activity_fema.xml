@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" 
+	android:descendantFocusability="beforeDescendants">
+    
+    <TextView
+        android:id="@+id/fema_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="290dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        >
+    	<requestFocus/>
+    </TextView>
+    
+    <TextView
+        android:id="@+id/fema_lat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/fema_lat"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:layout_toLeftOf="@id/fema_lat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:text="Latitude: ">
+    	<requestFocus/>
+    </TextView>
+    
+    <Button
+        android:id="@+id/Cur_fema_Loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/fema_lat"
+        android:layout_marginRight="50dp"
+        android:text="Current Location" />
+    
+    <TextView
+        android:id="@+id/fema_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fema_lat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="290dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" >
+    	<requestFocus/>
+    </TextView>
+    
+    <TextView
+        android:id="@+id/fema_long_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/fema_long"
+        android:layout_below="@id/fema_lat"
+        android:layout_toLeftOf="@id/fema_long"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Longitude: ">
+    	<requestFocus/>
+    </TextView>
+        
+     <TextView
+        android:id="@+id/identifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fema_long"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:ems="10" >
+		<requestFocus/>
+    </TextView>
+
+    <TextView
+        android:id="@+id/identifier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/identifier"
+        android:layout_below="@id/fema_long"
+        android:layout_toLeftOf="@id/identifier"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Identifier: ">
+    	<requestFocus/>
+    </TextView>
+
+    <EditText
+        android:id="@+id/live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/identifier"
+        android:layout_marginRight="485dp"
+        android:layout_marginTop="20dp"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/live_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/live"
+        android:layout_below="@id/identifier"
+        android:layout_toLeftOf="@id/live"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Live: ">
+    	<requestFocus/>
+    </TextView>
+
+    <TextView
+        android:id="@+id/dead_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/live"
+        android:layout_alignBaseline="@id/live"
+        android:layout_below="@id/identifier"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="490dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Dead: ">
+    	<requestFocus/>
+    </TextView>
+        
+    <EditText
+        android:id="@+id/dead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_alignBaseline="@id/live"
+        android:layout_below="@id/identifier"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="260dp"
+        android:ems="4" 
+        android:inputType="numberDecimal">
+    </EditText>
+
+
+    
+    <EditText
+        android:id="@+id/hazard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/live"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="290dp"
+        android:ems="10">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/hazard_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/hazard"
+        android:layout_below="@id/live"
+        android:layout_toLeftOf="@id/hazard"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Hazard: ">
+    	<requestFocus/>
+    </TextView>
+    
+    <TextView
+        android:id="@+id/time_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/hazard"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:ems="10" >
+		<requestFocus/>
+    </TextView>
+
+    <TextView
+        android:id="@+id/time_date_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/time_date"
+        android:layout_below="@id/hazard"
+        android:layout_toLeftOf="@id/time_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Time/Date: ">
+    	<requestFocus/>
+    </TextView>
+    
+    <Button
+        android:id="@+id/fema_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="100dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/fema_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/fema_cancel"
+        android:layout_alignBottom="@id/fema_cancel"
+        android:layout_marginRight="100dp"
+        android:text="Confirm" />
+
+</RelativeLayout>

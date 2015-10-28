@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" 
+	android:descendantFocusability="beforeDescendants">
+    
+    <TextView
+        android:id="@+id/vic_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="290dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/vic_lat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/vic_lat"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:layout_toLeftOf="@id/vic_lat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:text="Latitude: " />
+    
+    <Button
+        android:id="@+id/vic_cur_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/vic_lat"
+        android:layout_marginRight="50dp"
+        android:text="Current Location" />
+    
+    <TextView
+        android:id="@+id/vic_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/vic_lat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="290dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/vic_long_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/vic_long"
+        android:layout_below="@id/vic_lat"
+        android:layout_toLeftOf="@id/vic_long"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Longitude: " />
+    
+    <Spinner
+        android:id="@+id/triage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/vic_long"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="410dp"
+        android:entries="@array/triage_arrays"
+        android:prompt="@string/triage_prompt" />
+
+    <TextView
+        android:id="@+id/triage_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/triage"
+        android:layout_below="@id/vic_long"
+        android:layout_toLeftOf="@id/triage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Triage: " />
+    
+    <EditText
+        android:id="@+id/vic_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/triage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="280dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/vic_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/vic_detail"
+        android:layout_below="@id/triage"
+        android:layout_toLeftOf="@id/vic_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="280dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" 
+        android:text="Description: " />
+    
+    <Button
+        android:id="@+id/vic_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="100dp"
+        android:text="Cancel" />
+    
+    <Button 
+        android:id="@+id/vic_evac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:text="Evacuate" />
+    
+    <Button
+        android:id="@+id/vic_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/vic_cancel"
+        android:layout_alignBottom="@id/vic_cancel"
+        android:layout_marginRight="100dp"
+        android:text="Confirm" />
+
+</RelativeLayout>
