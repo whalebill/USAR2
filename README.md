@@ -28,3 +28,4 @@ users. Information of each marker will be displayed as requested. To avoid long 
 or data collision in main UI thread, we propose a server thread, which mainly function is to
 perform as a server manager to manage all server data uploading, data downloading and
 data updating to main UI thread.
+
